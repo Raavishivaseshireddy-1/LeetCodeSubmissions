@@ -2,7 +2,7 @@ class NumArray {
 
     int prefixSum[];
     public NumArray(int[] nums) {
-        this.prefixSum = nums;
+        prefixSum = nums;
         for(int i = 1; i < prefixSum.length; i++) {
             prefixSum[i] = prefixSum[i] + prefixSum[i - 1];
         }
