@@ -9,7 +9,7 @@ class Solution {
 
     private void bfs(int r, int c, char[][] grid, boolean[][] vis) {
         Queue<Pair> queue = new LinkedList<Pair>();
-        int[][] dir = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };
+        int[][] dir = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 }};
         int n = grid.length, m = grid[0].length;
         vis[r][c] = true;
         queue.add(new Pair(r, c));
